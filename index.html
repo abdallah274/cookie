@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>yummy</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav
+      class="side-nav overflow-hidden position-fixed top-0 d-flex min-vh-100"
+    >
+      <div
+        class="nav-tab d-none position-relative d-flex flex-column justify-content-between min-vh-100 p-4"
+      >
+        <div class="links">
+          <ul class="list-unstyled overflow-hidden">
+            <li
+              class="nav-link py-2 position-relative"
+              id="search-btn"
+              data-category="search"
+            >
+              Search
+            </li>
+            <li
+              class="nav-link py-2 position-relative"
+              id="categ"
+              data-category="search"
+            >
+              Categories
+            </li>
+            <li
+              class="nav-link py-2 position-relative"
+              id="area"
+              data-category="search"
+            >
+              Area
+            </li>
+            <li
+              class="nav-link py-2 position-relative"
+              id="ingrend"
+              data-category="search"
+            >
+              Ingredients
+            </li>
+            <li
+              class="nav-link py-2 position-relative"
+              id="contact-us"
+              data-category="search"
+            >
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-header d-flex flex-column justify-content-between text-center text-black bg-white py-4 px-2"
+      >
+        <picture><img src="images/logo.png" alt="logo" /></picture>
+        <div class="close" id="openclose">
+          <i
+            class="fa-solid open-close-icon fa-align-justify fa-2x"
+            id="close"
+          ></i>
+          <i
+            class="fa-solid open-close-icon fa-2x fa-x d-none"
+            id="close-x"
+          ></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe d-block" id="close"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="home">
+      <div class="row py-5 g-4" id="displayData"></div>
+    </div>
+    <div class="min-vh-100 position-relative d-none" id="spiner">
+      <div class="inner-loading-screen position-absolute top-50 start-50">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </div>
+
+      <div class="container">
+        <div class="row py-5 g-4" id="rowData"></div>
+      </div>
+    </div>
+   
+    <div class="container w-75 text-center py-5 d-none" id="search">
+      <div class="d-flex">
+        <input
+          type="text"
+          id="searchl"
+          placeholder="Search By Name"
+          class="form-control bg-black text-white me-4"
+        />
+        <input
+          type="text"
+          placeholder="Search By First Letter"
+          class="form-control text-white bg-black"
+        />
+      </div>
+    </div>
+
+    <div
+      class="contact d-none min-vh-100 d-flex justify-content-center align-items-center"
+      id="contact"
+    >
+      <div class="container w-75">
+        <div class="row">
+          <form class="d-flex justify-content-center align-items-center">
+            <div class="w-100 me-4">
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                class="w-100 form-control"
+              />
+              <input
+                type="text"
+                placeholder="Enter Your Phone"
+                class="w-100 form-control"
+              />
+              <input
+                type="text"
+                placeholder="Enter Your Password"
+                class="w-100 form-control"
+              />
+            </div>
+            <div class="w-100">
+              <input
+                type="text"
+                placeholder="Enter Your Email"
+                class="w-100 form-control"
+              />
+              <input
+                type="text"
+                placeholder="Enter Your Age"
+                class="w-100 form-control"
+              />
+              <input
+                type="text"
+                placeholder="Enter Your Repassword"
+                class="w-100 form-control"
+              />
+            </div>
+          </form>
+          <button class="btn btn-outline-danger px-2 mt-3 mx-auto">
+            sumbit
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
